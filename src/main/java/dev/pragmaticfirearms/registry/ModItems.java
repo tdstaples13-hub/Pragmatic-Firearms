@@ -17,6 +17,8 @@ public final class ModItems {
     public static final Map<String, DeferredItem<AmmoMagazineItem>> MAGAZINES = new LinkedHashMap<>();
 
     static {
+        ITEMS.registerSimpleBlockItem(ModBlocks.COMPONENT_FABRICATOR);
+        ITEMS.registerSimpleBlockItem(ModBlocks.AMMUNITION_ASSEMBLY_PRESS);
         for (AmmoCatalog.Caliber caliber : AmmoCatalog.CALIBERS)
             AMMUNITION.put(caliber.id(), ITEMS.registerSimpleItem("ammo_" + caliber.id()));
         for (String name : new String[] {

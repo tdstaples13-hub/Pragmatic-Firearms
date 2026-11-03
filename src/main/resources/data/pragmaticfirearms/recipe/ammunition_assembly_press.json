@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IPI",
+    "CSC",
+    "IRI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "P": "minecraft:piston",
+    "C": "minecraft:copper_ingot",
+    "S": "minecraft:smithing_table",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "pragmaticfirearms:ammunition_assembly_press",
+    "count": 1
+  }
+}

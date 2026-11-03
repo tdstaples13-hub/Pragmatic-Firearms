@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CIC",
+    "PTP",
+    "CFC"
+  ],
+  "key": {
+    "C": "minecraft:copper_ingot",
+    "I": "minecraft:iron_ingot",
+    "P": "minecraft:piston",
+    "T": "minecraft:crafting_table",
+    "F": "minecraft:furnace"
+  },
+  "result": {
+    "id": "pragmaticfirearms:component_fabricator",
+    "count": 1
+  }
+}
