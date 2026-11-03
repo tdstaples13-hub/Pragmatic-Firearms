@@ -1,0 +1,13 @@
+{
+  "id": "22_lr",
+  "display_name": ".22 LR",
+  "tier": 1,
+  "batch_size": 8,
+  "components": {
+    "light_cartridge_body": 8,
+    "small_projectile_core": 8,
+    "universal_ignition_cap": 8,
+    "universal_propellant_charge": 8
+  },
+  "assembly_ticks": 40
+}

@@ -1,0 +1,8 @@
+{
+  "id": "shotgun_pellet_bundle",
+  "input": {
+    "iron_ingot": 1
+  },
+  "output": 8,
+  "ticks": 40
+}

@@ -1,0 +1,8 @@
+{
+  "id": "reinforced_projectile_core",
+  "input": {
+    "iron_ingot": 2
+  },
+  "output": 8,
+  "ticks": 40
+}

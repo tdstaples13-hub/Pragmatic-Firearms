@@ -1,0 +1,9 @@
+{
+  "id": "universal_ignition_cap",
+  "input": {
+    "copper_nugget": 1,
+    "redstone": 1
+  },
+  "output": 8,
+  "ticks": 40
+}

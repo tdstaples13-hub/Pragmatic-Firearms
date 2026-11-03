@@ -1,0 +1,13 @@
+{
+  "id": "38_special",
+  "display_name": ".38 Special",
+  "tier": 1,
+  "batch_size": 8,
+  "components": {
+    "light_cartridge_body": 8,
+    "standard_projectile_core": 8,
+    "universal_ignition_cap": 8,
+    "universal_propellant_charge": 8
+  },
+  "assembly_ticks": 40
+}

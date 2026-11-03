@@ -1,0 +1,13 @@
+{
+  "id": "762x54mmr",
+  "display_name": "7.62×54mmR",
+  "tier": 2,
+  "batch_size": 8,
+  "components": {
+    "standard_cartridge_body": 8,
+    "reinforced_projectile_core": 8,
+    "universal_ignition_cap": 8,
+    "universal_propellant_charge": 24
+  },
+  "assembly_ticks": 60
+}

@@ -1,0 +1,9 @@
+{
+  "id": "standard_cartridge_body",
+  "input": {
+    "copper_ingot": 2,
+    "iron_nugget": 2
+  },
+  "output": 8,
+  "ticks": 40
+}

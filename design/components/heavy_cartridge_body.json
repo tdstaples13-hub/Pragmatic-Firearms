@@ -1,0 +1,9 @@
+{
+  "id": "heavy_cartridge_body",
+  "input": {
+    "copper_ingot": 3,
+    "iron_ingot": 1
+  },
+  "output": 8,
+  "ticks": 40
+}

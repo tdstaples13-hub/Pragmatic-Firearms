@@ -1,0 +1,8 @@
+{
+  "id": "universal_propellant_charge",
+  "input": {
+    "gunpowder": 1
+  },
+  "output": 8,
+  "ticks": 40
+}

@@ -1,0 +1,13 @@
+{
+  "id": "338_lapua",
+  "display_name": ".338 Lapua Magnum",
+  "tier": 3,
+  "batch_size": 8,
+  "components": {
+    "heavy_cartridge_body": 8,
+    "heavy_projectile_core": 8,
+    "universal_ignition_cap": 8,
+    "universal_propellant_charge": 32
+  },
+  "assembly_ticks": 100
+}

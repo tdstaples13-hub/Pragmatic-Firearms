@@ -1,0 +1,8 @@
+{
+  "id": "heavy_projectile_core",
+  "input": {
+    "iron_ingot": 3
+  },
+  "output": 8,
+  "ticks": 40
+}

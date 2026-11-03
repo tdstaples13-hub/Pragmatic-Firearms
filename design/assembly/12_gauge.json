@@ -1,0 +1,13 @@
+{
+  "id": "12_gauge",
+  "display_name": "12 Gauge",
+  "tier": 1,
+  "batch_size": 8,
+  "components": {
+    "shotgun_shell_body": 8,
+    "shotgun_pellet_bundle": 8,
+    "universal_ignition_cap": 8,
+    "universal_propellant_charge": 16
+  },
+  "assembly_ticks": 40
+}

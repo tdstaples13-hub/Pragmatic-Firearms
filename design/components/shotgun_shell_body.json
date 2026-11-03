@@ -1,0 +1,9 @@
+{
+  "id": "shotgun_shell_body",
+  "input": {
+    "copper_ingot": 1,
+    "paper": 4
+  },
+  "output": 8,
+  "ticks": 40
+}

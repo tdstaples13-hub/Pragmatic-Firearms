@@ -1,0 +1,8 @@
+{
+  "id": "shotgun_slug_core",
+  "input": {
+    "iron_ingot": 2
+  },
+  "output": 8,
+  "ticks": 40
+}
