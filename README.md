@@ -6,13 +6,16 @@ A Minecraft **1.21.1** / **NeoForge 21.1.265** mod project, requiring **Java 21*
 - 22 ammo item registrations, 13 manufacturing items, 8 magazine/clip/belt item definitions.
 - Damage-based magazine round-count helpers: `damage = capacity - loadedRounds`.
 - A full/empty visible ammo bar on magazine items.
-- 22 assembly and 12 component fabrication profiles under `design/`.
+- 22 assembly and 12 component fabrication profiles under `design/` and the pure-Java `ManufacturingCatalog` (these are not operational machine recipes).
 - Translation entries and temporary vanilla-texture item models.
-- Pure-Java magazine-counting test (`MagazineRulesTest`).
+- Pure-Java magazine-counting and manufacturing catalog tests.
+- Craftable, placeable Component Fabricator and Ammunition Assembly Press **blocks**, with placeholder models and drops.
+- GitHub Actions workflow for logic checks and NeoForge build.
 
 ## Not implemented
 - **In-game verification of magazine crafting**, particularly the shift-click, full inventory, and automation edge cases. Custom load/unload recipe implementations and serializers are now in source.
-- Ammunition manufacturing blocks, upgrades, input/output inventory, and machine recipe codecs.
+- Machine processing is not yet operational: block entities, inventory, processing ticks, GUIs, recipe codecs and hopper handling remain.
+- Upgrades and power-free production rules need runtime implementation.
 - Firearm items, firing, chambers, feeding and reload mechanics.
 - Actual textures and polished interfaces.
 

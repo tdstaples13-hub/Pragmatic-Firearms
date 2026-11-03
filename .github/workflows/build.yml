@@ -15,6 +15,17 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.10.2'
+      - name: Verify pure Java magazine and manufacturing rules
+        run: |
+          mkdir -p build/logic-checks
+          javac -d build/logic-checks \
+            src/main/java/dev/pragmaticfirearms/core/MagazineRules.java \
+            src/main/java/dev/pragmaticfirearms/core/AmmoCatalog.java \
+            src/main/java/dev/pragmaticfirearms/core/ManufacturingCatalog.java \
+            src/test/java/dev/pragmaticfirearms/core/MagazineRulesTest.java \
+            src/test/java/dev/pragmaticfirearms/core/ManufacturingCatalogTest.java
+          java -ea -cp build/logic-checks dev.pragmaticfirearms.core.MagazineRulesTest
+          java -ea -cp build/logic-checks dev.pragmaticfirearms.core.ManufacturingCatalogTest
       - name: Compile and package mod
         run: gradle build --no-daemon --stacktrace
       - name: Upload artifacts
