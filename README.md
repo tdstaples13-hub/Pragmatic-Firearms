@@ -20,10 +20,10 @@ A Minecraft **1.21.1** / **NeoForge 21.1.265** mod project, requiring **Java 21*
 - Actual textures and polished interfaces.
 
 The `design/` files are planning data, **not operational Minecraft recipes**.
-The project source has not yet been confirmed by a full NeoForge Gradle build. No Gradle executable is installed in the current test environment.
+The project compiles and packages successfully in GitHub Actions using Java 21 and Gradle 8.10.2. Runtime crafting and workstation behavior still require in-game verification.
 
 ## Build
-Import with an installed Gradle and Java 21, or generate a Gradle wrapper with a suitable Gradle 8.x distribution.
+Import with an installed Gradle and Java 21 (CI uses Gradle 8.10.2), or generate a Gradle wrapper with a compatible Gradle 8.x distribution.
 The starter does not currently include `gradlew`.
 
 ## Gameplay specification
