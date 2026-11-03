@@ -12,7 +12,7 @@ public class AmmoMagazineItem extends Item {
     private final String magazineFamily;
 
     public AmmoMagazineItem(Properties properties, int capacity, String caliberId, String magazineFamily) {
-        super(properties.durability(capacity).setNoRepair());
+        super(properties.durability(capacity).component(DataComponents.DAMAGE, capacity).setNoRepair());
         this.capacity = capacity;
         this.caliberId = caliberId;
         this.magazineFamily = magazineFamily;
