@@ -11,19 +11,17 @@ A Minecraft **1.21.1** / **NeoForge 21.1.265** mod project, requiring **Java 21*
 - Pure-Java magazine-counting test (`MagazineRulesTest`).
 
 ## Not implemented
-- Crafting-grid **loading** (magazine + one compatible round -> updated magazine).
-- Crafting-grid **unloading** (magazine alone -> one round, same magazine stays in same grid slot with one fewer round).
-  These need custom server-authoritative recipe/slot transaction integration, including shift-click and automation edge cases.
+- **In-game verification of magazine crafting**, particularly the shift-click, full inventory, and automation edge cases. Custom load/unload recipe implementations and serializers are now in source.
 - Ammunition manufacturing blocks, upgrades, input/output inventory, and machine recipe codecs.
 - Firearm items, firing, chambers, feeding and reload mechanics.
 - Actual textures and polished interfaces.
 
 The `design/` files are planning data, **not operational Minecraft recipes**.
-The project source has not yet been confirmed by a full NeoForge Gradle build.
+The project source has not yet been confirmed by a full NeoForge Gradle build. No Gradle executable is installed in the current test environment.
 
 ## Build
 Import with an installed Gradle and Java 21, or generate a Gradle wrapper with a suitable Gradle 8.x distribution.
 The starter does not currently include `gradlew`.
 
 ## Gameplay specification
-Magazine count is stored in item damage, magazines never break when empty, and ammunition compatibility is caliber-specific. Loading/unloading will be available from the player 2x2 grid or 3x3 table without a separate GUI.
+Magazine count is stored in item damage, magazines never break when empty, and ammunition compatibility is caliber-specific. Two special crafting recipes are now defined for the player 2x2 grid and the 3x3 table. For unloading, the updated magazine is returned to its original crafting input slot via dynamic recipe remainder. Runtime validation is still required; see `docs/MAGAZINE_CRAFTING_TEST_PLAN.md`.
