@@ -43,6 +43,11 @@ public final class MagazineUnloadRecipe extends CustomRecipe {
     }
 
     @Override
+    public boolean canCraftInDimensions(int width, int height) {
+        return width * height >= 1;
+    }
+
+    @Override
     public RecipeSerializer<?> getSerializer() {
         return ModRecipeSerializers.MAGAZINE_UNLOAD.get();
     }
